@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools @ git+https://github.com/pypa/setuptools.git@main"]
+
+[project]
+name = "mkdiff"
+version = "0.0.1"
+authors = [{ name = "RibosomeK", email = "author@example.com" }]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
