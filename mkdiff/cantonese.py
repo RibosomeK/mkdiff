@@ -213,7 +213,8 @@ class PLAN_A:
         else:
             for c in CONSONANT:
                 if word.startswith(c) and (v := word[len(c) :]) in PLAN_A.VOWEL:
-                    return (*PLAN_A.CONSONANT.get(c, c), *PLAN_A.VOWEL[v])
+                    print(c, v)
+                    return (*PLAN_A.CONSONANT.get(c, (c,)), *PLAN_A.VOWEL[v])
             else:
                 raise KeyError("no such a word in cantonese (maybe...")
 

@@ -2,3 +2,4 @@ pyyaml
 opencc
 jieba
 pycantonese
+textgrid

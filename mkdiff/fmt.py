@@ -61,7 +61,7 @@ class RenameLog:
 
 
 def extract_ending_num(s: str) -> int:
-    num = []
+    num: list[int] = []
     for i in range(len(s)):
         try:
             num.append(int(s[-(i + 1)]))
