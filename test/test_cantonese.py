@@ -1,5 +1,6 @@
-from mkdiff.cantonese import PLAN_A
 import pytest
+
+from mkdiff.cantonese import PLAN_A
 
 
 def test_plan_a():

@@ -1,7 +1,8 @@
 import os
+
 from .fmt import RenameLog, split_copy
-from .text2jyut import text2jyut
 from .mklab import EXT, iter_wav
+from .text2jyut import text2jyut
 
 
 def text2lab(text: str) -> str:

@@ -1,8 +1,10 @@
-import pycantonese
-from pycantonese.jyutping.parse_jyutping import Jyutping
-from mkdiff import OpenCC
 import json
 from typing import Optional
+
+import pycantonese
+from pycantonese.jyutping.parse_jyutping import Jyutping
+
+from mkdiff import OpenCC
 
 
 def read_lazy(file: str = "./src/dictionary/lazy.json") -> dict[str, str]:

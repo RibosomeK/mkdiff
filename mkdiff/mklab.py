@@ -1,5 +1,5 @@
-from enum import StrEnum
 import os
+from enum import StrEnum
 from typing import Iterator
 
 
@@ -7,6 +7,7 @@ class EXT(StrEnum):
     WAV = ".wav"
     JSON = ".json"
     LAB = ".lab"
+    TextGrid = ".TextGrid"
 
 
 def iter_wav(dir: str) -> Iterator[tuple[str, str]]:

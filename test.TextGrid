@@ -1,0 +1,132 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.0
+xmax = 14.3521
+tiers? <exists>
+size = 2
+item []:
+	item [1]:
+		class = "IntervalTier"
+		name = "word"
+		xmin = 0
+		xmax = 14.3521
+		intervals: size = 9
+			intervals [1]:
+				xmin = 0
+				xmax = 1.59468
+				text = "SP"
+			intervals [2]:
+				xmin = 1.59468
+				xmax = 3.18936
+				text = "ze"
+			intervals [3]:
+				xmin = 3.18936
+				xmax = 4.78404
+				text = "waan"
+			intervals [4]:
+				xmin = 4.78404
+				xmax = 6.37872
+				text = "si"
+			intervals [5]:
+				xmin = 6.37872
+				xmax = 7.9734
+				text = "jat"
+			intervals [6]:
+				xmin = 7.9734
+				xmax = 9.56808
+				text = "go"
+			intervals [7]:
+				xmin = 9.56808
+				xmax = 11.16276
+				text = "caak"
+			intervals [8]:
+				xmin = 11.16276
+				xmax = 12.75744
+				text = "si"
+			intervals [9]:
+				xmin = 12.75744
+				xmax = 14.3521
+				text = "SP"
+	item [2]:
+		class = "IntervalTier"
+		name = "phone"
+		xmin = 0
+		xmax = 14.3521
+		intervals: size = 19
+			intervals [1]:
+				xmin = 0
+				xmax = 1.59468
+				text = "SP"
+			intervals [2]:
+				xmin = 1.59468
+				xmax = 2.39202
+				text = "z"
+			intervals [3]:
+				xmin = 2.39202
+				xmax = 3.18936
+				text = "eh"
+			intervals [4]:
+				xmin = 3.18936
+				xmax = 3.72092
+				text = "w"
+			intervals [5]:
+				xmin = 3.72092
+				xmax = 4.25248
+				text = "aa"
+			intervals [6]:
+				xmin = 4.25248
+				xmax = 4.78404
+				text = ":n"
+			intervals [7]:
+				xmin = 4.78404
+				xmax = 5.58138
+				text = "s"
+			intervals [8]:
+				xmin = 5.58138
+				xmax = 6.37872
+				text = "iy"
+			intervals [9]:
+				xmin = 6.37872
+				xmax = 6.91028
+				text = "y"
+			intervals [10]:
+				xmin = 6.91028
+				xmax = 7.44184
+				text = "ax"
+			intervals [11]:
+				xmin = 7.44184
+				xmax = 7.9734
+				text = ":t"
+			intervals [12]:
+				xmin = 7.9734
+				xmax = 8.77074
+				text = "g"
+			intervals [13]:
+				xmin = 8.77074
+				xmax = 9.56808
+				text = "oh"
+			intervals [14]:
+				xmin = 9.56808
+				xmax = 10.09964
+				text = "c"
+			intervals [15]:
+				xmin = 10.09964
+				xmax = 10.6312
+				text = "aa"
+			intervals [16]:
+				xmin = 10.6312
+				xmax = 11.16276
+				text = ":k"
+			intervals [17]:
+				xmin = 11.16276
+				xmax = 11.9601
+				text = "s"
+			intervals [18]:
+				xmin = 11.9601
+				xmax = 12.75744
+				text = "iy"
+			intervals [19]:
+				xmin = 12.75744
+				xmax = 14.3521
+				text = "SP"

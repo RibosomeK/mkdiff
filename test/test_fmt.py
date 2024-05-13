@@ -1,16 +1,10 @@
-import pytest
 import os
 
+import pytest
 
 from mkdiff.error import NoEndingNumError
-from mkdiff.fmt import (
-    RenameLog,
-    extract_ending_num,
-    fmt,
-    fmt_by_dir,
-    split_copy,
-    trim_name,
-)
+from mkdiff.fmt import (RenameLog, extract_ending_num, fmt, fmt_by_dir,
+                        split_copy, trim_name)
 
 
 def test_split():

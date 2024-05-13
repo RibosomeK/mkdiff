@@ -8,6 +8,7 @@ from .error import NoEndingNumError
 from .mklab import EXT
 from .text2jyut import text2jyut
 
+RENAME = "rename.json"
 
 """
 json format be like:
@@ -38,7 +39,7 @@ class RenameLog:
     def save(self):
         logging.info("Saving config...")
         logging.info(f"Current directory: {self.dir}")
-        with open(os.path.join(self.dir, "rename.json"), mode="w") as fp:
+        with open(os.path.join(self.dir, RENAME), mode="w") as fp:
             json.dump(self.asdict(), fp, ensure_ascii=False, indent=2)
             logging.info("Saved successfully")
 
@@ -55,7 +56,7 @@ class RenameLog:
         rename_logs: list[Self] = []
         for root, _, files in os.walk(dir):
             for file in files:
-                if file == "rename.json":
+                if file == RENAME:
                     rename_logs.append(cls.from_file(os.path.join(root, file)))
         return rename_logs
 
@@ -151,6 +152,10 @@ def fmt_by_dir(dir: str, rule: Callable[[str], str] = trim_name) -> list[RenameL
     #         log.file_name[new_file] = file
 
     for root, _, files in os.walk(dir):
+        if os.path.exists(os.path.join(root, RENAME)):
+            logging.info(f"Directory {root} already contain a rename.json.")
+            logging.info("Skipping...")
+            continue
         if files:
             rename_log.append(fmt(root, files, rule))
 
